@@ -1,0 +1,10 @@
+Time stamps: - done
+Usernames: (autmoaticcally assigned) - for now (could use tweaking to ensure everyname is unique) done 
+Scroll uptext: - done
+Chat log history: - (i think it is) done
+Display Curent Users: - done
+Change Usernames: - done
+Username color: - done
+Bold your own messages: - done
+Cookies:
+Emoji Replacement: - done

@@ -1,0 +1,190 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    font: 13px Helvetica, Arial; 
+    background-color: rgb(32, 32, 32);
+}
+
+#messageBoard{
+    margin: auto;
+    position: relative;
+    background-color: black;
+    max-width: 960px;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+form { 
+    background: #000;
+    bottom: 0; 
+    padding: 3px; 
+    position: absolute; 
+    width: 100%;
+    max-height: 51px;
+}
+
+form > input { 
+    border: 0;
+    border-radius: 12px;
+    border-style: inset; 
+    padding: 10px; 
+    width: 90%; 
+    margin-right: 0.5%;
+    font-size: 16pt; 
+}
+
+form > button { 
+    width: 9%; 
+    background: white; 
+    border: none;
+    border-radius: 12px; 
+    border-style: inset;
+    padding: 6px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 16pt;
+}
+
+#user{
+    background-color: white;
+    height: 45px;
+    border-radius: 12px;
+    border-style: inset;
+    height: 45px;
+    font-size: 16pt;
+    text-align: center;
+    max-width: 50%;
+    margin: auto;
+    font-weight: 750;
+    padding: 8px;
+}
+
+#chat{
+    display: flex;
+    position: absolute;
+    height: calc(100% - 96px);
+    width: 100%;
+}
+
+#messageArea{
+    overflow-y: auto;
+    position: relative;
+    height: calc(100%);
+    width: 75%;
+    /*background-color: ivory;*/
+}
+
+#messages { 
+    list-style-type: none; 
+    position: absolute;
+    margin: 0; 
+    padding: 0; 
+    offset: bottom;
+    width: 100%;
+    max-height: 100%;
+    bottom: 0;
+}
+
+#messages li { 
+    padding: 6px 10px;
+    margin: 25px 0;
+    font-size: 16pt; 
+    border-radius: 12pt;
+    background: gold;
+}
+
+#chatInfoSettings{
+    background-color: gray;
+    border-radius: 12px;
+    border-style: inset;
+    height: 100%;
+    width: 24%;
+    margin-left: 1%;
+}
+
+#usersDiv{
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    padding: 6px;
+}
+
+#usersDiv > p{
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+#usersList{
+    font-size: 16pt;    
+}
+
+#userSettings > p{
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+@media only screen and (max-width: 790px){
+    form > button{
+        font-size: 12pt;
+    }
+
+    form{
+        font-size: 12pt;
+    }
+
+    #messageList li{
+        font-size: 12pt;
+    }
+
+    #user{
+        font-size: 12pt;
+    }
+
+    #usersList{
+        font-size: 12pt;
+    }
+
+    #usersDiv > p{
+        font-size: 12pt;
+    }
+
+    #changeUsernameOverlay > p{
+        font-size: 16pt;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    form > button{
+        font-size: 9pt;
+    }
+
+    form{
+        font-size: 9pt;
+    }
+
+    #messageList li{
+        font-size: 9pt;
+    }
+
+    #user{
+        font-size: 9pt;
+    }
+
+    #usersList{
+        font-size: 9pt;
+    }
+
+    #usersDiv > p{
+        font-size: 9pt;
+    }
+
+    #changeUsernameOverlay > p{
+        font-size: 13pt;
+    }
+}

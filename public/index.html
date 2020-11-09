@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel='stylesheet' href='style.css'>
+  </head>
+  <body>
+    <div id='messageBoard'>
+      <div id='user'></div>
+      <div id ='changeUsernameOverlay'>
+        <p>Change Username:</p>
+        <form id="changeUsernameForm"action="">
+          <input id="changeUsername" autocomplete="off" /><button>SEND</button>
+        </form>
+      </div>
+      <div id='chat'>
+        <div id='messageArea' data-numberOfMessages ='0'>
+          <ul id="messages"></ul>
+        </div>
+        <div id='chatInfoSettings'>
+          <div id='usersDiv'>
+            <p>Users In Lobby:</p>
+            <ul id="usersList"></ul>
+          </div>
+        </div>
+      </div>
+      <form id="chatForm"action="">
+        <input id="m" autocomplete="off" /><button>SEND</button>
+      </form>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src='client.js'></script>
+  </body>
+</html>
