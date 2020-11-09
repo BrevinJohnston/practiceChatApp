@@ -84,7 +84,9 @@ $(function () {
         let change = msg.split("\t");
         if(change[0] === userName){
             myColour = change[1];
-            myStorage.setItem('color', change[1]);
+            if(change[0] === myStorage.getItem('username')){
+                myStorage.setItem('color', change[1]);
+            }
         }
         else{
             $(`#${change[0]}`).attr('data-color', change[1]);
